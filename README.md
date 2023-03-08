@@ -4,7 +4,6 @@
 Pequeno projeto criado para monitorar a cotação do euro em relação ao real brasileiro pelo menos a cada minuto e enviar um alerta por e-mail caso o valor fique abaixo de um limite escolhido.
 
 ## Como utilizar:
-***
 1. Após clonar o repositório, você deve instalar as dependências necessárias através do comando:
 ```
 $ pip install -r requirements.txt
