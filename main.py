@@ -3,13 +3,11 @@ from datetime import datetime
 import time
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd
 from utils.Mail import Mail
 import sys
 import dotenv
 
-# Getting the e-mail credentials dataframe and setting some important variables:
-email_credentials_df = pd.read_csv('credentials.csv', sep=';', encoding='utf-8')
+# Getting the sender e-mail credentials and setting some important variables:
 dotenv.load_dotenv()
 SENDER_EMAIL = os.getenv('SENDER_EMAIL')
 SECURE_PASSWORD = os.getenv('SECURE_PASSWORD')
