@@ -11,11 +11,11 @@ import dotenv
 dotenv.load_dotenv()
 SENDER_EMAIL = os.getenv('SENDER_EMAIL')
 SECURE_PASSWORD = os.getenv('SECURE_PASSWORD')
-if float(sys.argv[1]) < 60:
-    DESIRED_THRESHOLD = 60
+DESIRED_THRESHOLD = float(sys.argv[1])
+if float(sys.argv[2]) < 60:
+    COOLDOWN_TIME_IN_SECS = 60
 else:
-    DESIRED_THRESHOLD = float(sys.argv[1])
-COOLDOWN_TIME_IN_SECS = float(sys.argv[2])
+    COOLDOWN_TIME_IN_SECS = float(sys.argv[2])
 EMAIL_ADDRESS = sys.argv[3]
 
 while True:
